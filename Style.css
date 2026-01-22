@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+    background-image: url("assets/bg.jpg");
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+}
+
+.navbar img {
+    width: 50%;
+    position: relative;
+    z-index: 10;
+}
+
+.main .box {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    opacity: 0.44;
+    background-color: black;
+}
+
+.main .navbar {
+    height: 14vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0 5vw;
+    justify-content: space-between;
+}
+
+.navbar .buttons {
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+    margin-left: auto;
+}
+
+.sign-in {
+    width: 76.9px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+}
+
+.hero {
+    border: 2px solid;
+    position: relative;
+    font-family: "Noto Serif Display", serif;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+    z-index: 10;
+}
+
+.hero .font {
+    font-size: 4em;
+    font-weight: bolder;
+    gap: 23px;
+}
+
+.hero span:nth-child(3) {
+    font-size: 20px;
+    font-weight: 500;
+    gap: 10px;
+}
+
+.input input:first-child {
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.input button {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar img {
+        width: 70%;
+    }
+
+    .main .navbar {
+        width: 90vw;
+        padding: 0 2vw;
+    }
+
+    .hero .font {
+        font-size: 40px;
+    }
+
+    .hero span:nth-child(3) {
+        font-size: 18px;
+    }
+
+    .input input:first-child {
+        width: 150px;
+        height: 35px;
+    }
+
+    .input button {
+        width: 80px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img {
+        width: 90%;
+    }
+
+    .main .navbar {
+        width: 100vw;
+        padding: 0 1vw;
+    }
+
+    .hero .font {
+        font-size: 30px;
+    }
+
+    .hero span:nth-child(3) {
+        font-size: 16px;
+    }
+
+    .input input:first-child {
+        width: 120px;
+        height: 30px;
+    }
+
+    .input button {
+        width: 70px;
+        height: 30px;
+    }
+}
